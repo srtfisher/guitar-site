@@ -4,22 +4,19 @@ module.exports = {
     "public/angularapp",
     "public/angularapp.js",
     "public/vendors.js",
-    "public/styles.css",
-    "!angularapp/loader.js"
+    "public/styles.css"
   ],
 
   dev: [
     "public/angularapp",
     "public/css",
     "public/img",
-    "public/vendor",
-    "!angularapp/loader.js"
+    "public/vendor"
   ],
 
   compiled: [
-    "angularapp/**.js",
+    "angularapp/**/*.js",
     "angularapp/*.js",
-    "assets/css/*.css",
-    "!angularapp/loader.js"
+    "assets/css/*.css"
   ]
 };

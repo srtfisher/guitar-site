@@ -10,6 +10,7 @@ module.exports = {
       'app/views/angularjs/application.php'
     ],
     tasks: [
+      'clean:compiled',
       'coffee',
       'sass'
     ],

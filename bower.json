@@ -8,6 +8,7 @@
     "underscore": "~1.5.2",
     "angular-underscore-module": "*",
     "requirejs": "*",
-    "angular-ui-router": "~0.2.11"
+    "angular-ui-router": "~0.2.11",
+    "requirejs-domready": "~2.0.1"
   }
 }

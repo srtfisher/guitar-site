@@ -12,9 +12,6 @@ module.exports = (grunt) ->
   require("jit-grunt") grunt,
     useminPrepare: "grunt-usemin"
 
-  # This package module didn't auto load from jit
-  grunt.loadNpmTasks 'grunt-bower-requirejs'
-
   # Load grunt tasks options from separate folder - https://github.com/firstandthird/load-grunt-config
   require("load-grunt-config") grunt,
     configPath: path.join(process.cwd(), ".grunt") #path to task.js files, defaults to grunt dir
