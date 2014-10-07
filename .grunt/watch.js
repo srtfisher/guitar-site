@@ -5,8 +5,15 @@ module.exports = {
   },
 
   angularapp: {
-    files: 'angularapp/**/*.js',
-    tasks: [ 'newer:jshint:angularapp' ],
+    files: [
+      'angularapp/**/*.coffee',
+      'angularapp/*.coffee'
+    ],
+    tasks: [
+      // Compile Coffeescript first
+      'coffee',
+      'newer:jshint:angularapp'
+    ],
   },
 
   assets_js: {
@@ -22,8 +29,14 @@ module.exports = {
   // enable livereload, see http://livereload.com/
   // little hack to include symlinked file in livereload
   livereload: {
-    files: [ 'public/**/*', 'app/views/angularjs/application.php' ],
-    tasks: [],
+    files: [
+      'public/**/*',
+      'app/views/angularjs/application.php'
+    ],
+    tasks: [
+      'coffee',
+      'sass'
+    ],
     options: {
       livereload: true
     }

@@ -15,4 +15,10 @@ module.exports = {
     "public/json",
     "public/vendor",
   ],
+
+  compiled: [
+    "angularapp/**.js",
+    "angularapp/*.js",
+    "assets/css/*.css"
+  ]
 };

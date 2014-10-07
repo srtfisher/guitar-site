@@ -22,9 +22,7 @@
     <script src="/angularapp/config.js"></script>
     <script src="/angularapp/routes.js"></script>
 
-    <script src="/angularapp/modules/example/example.module.js"></script>
-    <script src="/angularapp/modules/example/example.ctrl.js"></script>
-    <script src="/angularapp/modules/example/example.srv.js"></script>
+    <script src="/angularapp/modules/example/example.js"></script>
     <!-- endbuild -->
   </head>
   <body ng-controller="AppCtrl">
