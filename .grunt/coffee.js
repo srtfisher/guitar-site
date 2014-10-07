@@ -1,11 +1,11 @@
 module.exports = {
   coffee: {
     expand: true,
-    flatten: true,
     src: [
       'angularapp/*.coffee',
       'angularapp/**/*.coffee',
     ],
+    dest: './',
     ext: '.js'
   }
 };
