@@ -5,20 +5,21 @@ module.exports = {
     "public/angularapp.js",
     "public/vendors.js",
     "public/styles.css",
+    "!angularapp/loader.js"
   ],
 
   dev: [
     "public/angularapp",
     "public/css",
     "public/img",
-    "public/js",
-    "public/json",
     "public/vendor",
+    "!angularapp/loader.js"
   ],
 
   compiled: [
     "angularapp/**.js",
     "angularapp/*.js",
-    "assets/css/*.css"
+    "assets/css/*.css",
+    "!angularapp/loader.js"
   ]
 };

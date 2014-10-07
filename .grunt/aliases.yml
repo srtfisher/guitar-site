@@ -3,19 +3,14 @@ default:
 build:dev:
   - clean:all
   - symlink:angular
-  - symlink:font
   - symlink:image
-  - symlink:javascript
-  - symlink:json
   - symlink:stylesheet
   - symlink:vendor
   - coffee
   - sass
 build:prod:
   - clean:all
-  - copy:font
   - copy:image
-  - copy:json
   - processhtml:build_index
   - processhtml:build_templates
   - useminPrepare
@@ -31,8 +26,6 @@ clean:all:
   - clean:compiled
   - clean:dev
   - clean:prod
-dev:backend:
-  - concurrent:backend
 dev:frontend:
   - clean:all
   - build:dev

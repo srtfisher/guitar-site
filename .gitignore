@@ -28,4 +28,6 @@ api/docs
 # End generator-langular #
 
 angularapp/*.js
+!angularapp/loader.js
 .sass-cache
+.env

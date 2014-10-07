@@ -16,13 +16,4 @@ module.exports = {
       dest: 'public/img/'
     }]
   },
-
-  json: {
-    files: [{
-      expand: true,
-      cwd: 'assets/json',
-      src: ['**/*.json'],
-      dest: 'public/json/'
-    }]
-  },
 };

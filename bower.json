@@ -6,7 +6,8 @@
     "angular-bootstrap": "~0.10.0",
     "bootstrap": "~3.0.3",
     "underscore": "~1.5.2",
-    "angular-underscore-module": "*"
+    "angular-underscore-module": "*",
+    "requirejs": "*",
+    "angular-ui-router": "~0.2.11"
   }
 }
-
