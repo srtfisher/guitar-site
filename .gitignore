@@ -14,7 +14,9 @@ node_modules
 # development
 public/angularapp
 public/css
+assets/css
 public/js
+public/img
 public/json
 public/vendor
 # production
