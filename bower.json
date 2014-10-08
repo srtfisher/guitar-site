@@ -9,7 +9,6 @@
     "angular-underscore-module": "*",
     "requirejs": "*",
     "angular-ui-router": "~0.2.11",
-    "requirejs-domready": "~2.0.1",
-    "angularAMD": "~0.2.1"
+    "requirejs-domready": "~2.0.1"
   }
 }
