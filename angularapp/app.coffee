@@ -1,11 +1,12 @@
 "use strict"
 
-define(['angular'], (angular) ->
-  console.log angular
-
-  app = angular.module "tabs", [
+define([
+  # Load angular modules
+  'angular-ui-router'
+], (router) ->
+  app = angular.module 'tabs', [
+    'ui.router'
     # "ui.bootstrap"
-    # "ExampleModule"
   ]
 
   app.controller "AppCtrl", [
@@ -16,6 +17,14 @@ define(['angular'], (angular) ->
         title: "Laravel PHP Framework"
 
       $scope.message = "You have arrived."
+  ]
+
+  # Application Routes
+  app.config [
+    '$stateProvider'
+    ($stateProvider) ->
+
+      # Define States
   ]
 
   return app

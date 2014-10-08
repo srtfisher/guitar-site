@@ -8,11 +8,14 @@
 
     <!-- build:css(assets/) /styles.css -->
     <link href="/css/screen.css" rel="stylesheet">
+    <script src="/vendor/angular/angular.js"></script>
     <script data-main="angularapp/loader" src="/vendor/requirejs/require.js"></script>
   </head>
   <body ng-controller="AppCtrl">
     <div ng-include="'angularapp/modules/application/views/header.html'"></div>
     <div ui-view></div>
+
+    {{ laravel.title }}
 
     <?php if (App::environment() === 'local') : ?>
       <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>

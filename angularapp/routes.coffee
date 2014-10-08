@@ -1,9 +1,14 @@
-define ['./app'], (app) ->
+define [
+  'angular-ui-router'
+], ->
   'use strict'
 
-  app.config [
+  app = angular.module 'tabs'
+  console.log 'adding app.config'
+  return app.config [
     '$stateProvider'
     ($stateProvider) ->
-      # Define States
 
+      # Define States
+      console.log 'define states'
   ]
