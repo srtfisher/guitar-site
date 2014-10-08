@@ -11,15 +11,11 @@ build:dev:
 build:prod:
   - clean:all
   - copy:image
-  - processhtml:build_index
-  - processhtml:build_templates
-  - useminPrepare
   - coffee
-  - concat
-  - uglify
+  #- uglify
   - sass
-  - cssmin
-  - usemin
+  # - cssmin
+  # - usemin
 build:doc:
   - apidoc:compile
 clean:all:
