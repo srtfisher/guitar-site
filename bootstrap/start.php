@@ -25,10 +25,12 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(function() {
-	$env = __DIR__.'/../.env';
-
-	if (file_exists($env)) return trim(file_get_contents($env));
-	return 'production';
+	if (file_exists(__DIR__.'/../.env'))
+		return trim(file_get_contents(__DIR__.'/../.env'));
+	elseif (getenv('LARAVEL_ENV'))
+		return getenv('LARAVEL_ENV');
+	else
+		return 'local';
 });
 
 /*
