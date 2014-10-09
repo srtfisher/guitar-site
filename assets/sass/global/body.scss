@@ -1,11 +1,42 @@
 body {
-  border-top: 8px solid #f2f2f2;
-
-  &, a {
-    font-family: $font-sans;
-  }
+  background: $brand-faint-grey;
+  border-top: 8px solid $brand-faint-grey;
 
   a {
     transition: 500ms;
   }
+}
+
+@mixin flat-btn($color) {
+  color: $color;
+  border-color: $color;
+
+  &:hover {
+    background: $color;
+    color: white;
+    border-color: $color;
+  }
+}
+.btn {
+  &.btn-flat {
+    background: transparent;
+    text-transform: uppercase;
+    transition: 200ms;
+    padding: 0 16px;
+    line-height: 35px;
+    border-radius: 0;
+
+    &.btn-primary {
+      @include flat-btn($brand-primary);
+    }
+
+    &.btn-lg {
+      line-height: 45px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.white-area {
+  background: white;
 }

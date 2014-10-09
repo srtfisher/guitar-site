@@ -7,7 +7,6 @@
     <meta name="environment" content="<?php echo App::environment(); ?>">
 
     <!-- build:css(assets/) /styles.css -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300|Vollkorn:400,700' rel='stylesheet' type='text/css'>
     <link href="/css/screen.css" rel="stylesheet">
     <script src="/vendor/angular/angular.js"></script>

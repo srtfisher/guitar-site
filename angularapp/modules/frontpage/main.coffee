@@ -12,8 +12,8 @@ define [], ->
   frontpage.config [
     '$stateProvider'
     ($stateProvider) ->
-      
-      $stateProvider.state "frontpage",
+
+      $stateProvider.state "index",
         url: "/"
         templateUrl: "/angularapp/modules/frontpage/views/index.html"
         controller: frontpageController
