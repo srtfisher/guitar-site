@@ -27,10 +27,11 @@ window.name = "NG_DEFER_BOOTSTRAP!"
 
 require [
   'app'
+  'modules/frontpage/main'
 ], (app) ->
   "use strict"
   $html = angular.element(document.getElementsByTagName("html")[0])
-  
+
   angular.element().ready ->
     angular.resumeBootstrap [app["name"]]
     return

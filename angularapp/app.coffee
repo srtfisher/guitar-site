@@ -6,6 +6,8 @@ define([
 ], (router) ->
   app = angular.module 'tabs', [
     'ui.router'
+
+    'Frontpage'
     # "ui.bootstrap"
   ]
 
@@ -21,10 +23,9 @@ define([
 
   # Application Routes
   app.config [
-    '$stateProvider'
-    ($stateProvider) ->
-
-      # Define States
+    '$locationProvider'
+    ($locationProvider) ->
+      $locationProvider.html5Mode true
   ]
 
   return app
