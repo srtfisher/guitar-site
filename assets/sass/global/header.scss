@@ -1,0 +1,35 @@
+header.global-header {
+  padding: 10px 0;
+
+  nav {
+    ul {
+      float: right;
+      list-style: none;
+      margin: 0;
+    }
+
+    li {
+      float: none;
+      display: inline;
+      margin: 0 10px 0 0;
+
+      a {
+        display: inline-block;
+        padding: 0 14px;
+
+        font: 400 13px/40px $font-sans;
+        color: #999;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: none;
+          color: #444;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

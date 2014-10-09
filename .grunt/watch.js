@@ -5,8 +5,8 @@ module.exports = {
     files: [
       'angularapp/*.coffee',
       'angularapp/**/*.coffee',
-      'assets/scss/**/*.scss',
-      'assets/scss/*.scss',
+      'assets/sass/**/*.scss',
+      'assets/sass/*.scss',
       'app/views/angularjs/application.php'
     ],
     tasks: [

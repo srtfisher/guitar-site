@@ -1,7 +1,9 @@
 module.exports = {
   sass: {
     options: {
-      loadPath: 'assets/sass'
+      loadPath: [
+        'assets/sass'
+      ]
     },
 
     files: {

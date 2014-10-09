@@ -1,0 +1,11 @@
+body {
+  border-top: 8px solid #F2F2F2;
+
+  &, a {
+    font-family: $font-sans;
+  }
+
+  a {
+    transition: 500ms;
+  }
+}
