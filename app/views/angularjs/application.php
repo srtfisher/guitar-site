@@ -20,7 +20,7 @@
       <div class="container">
         <div class="col-sm-6 col-md-4">
           <a href="/">
-            <img src="http://placehold.it/180x40">
+            <img src="/img/header/logo.png" width="180" height="40">
           </a>
         </div>
 
@@ -54,6 +54,63 @@
         music. Expand your horizons now.
       </p>
     </div>
+
+    <div class="container">
+      <div class="row product-listing">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="product">
+            <img src="http://placekitten.com/400/450">
+            <h4 class="product-title">
+              Tabs for Sale
+            </h4>
+            <h5 class="product-price">$15</h5>
+          </a>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="product">
+            <img src="http://placekitten.com/400/450">
+            <h4 class="product-title">
+              Tabs for Sale
+            </h4>
+            <h5 class="product-price">$15</h5>
+          </a>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a href="#" class="product">
+            <img src="http://placekitten.com/400/450">
+            <h4 class="product-title">
+              Tabs for Sale
+            </h4>
+            <h5 class="product-price">$15</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="global-footer">
+      <div class="container">
+        <p>
+          &copy; 2014 Twelvemonth Music
+        </p>
+
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/shop">Shop</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <div ui-view></div>
 
